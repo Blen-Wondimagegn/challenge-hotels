@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Set height of body and the document to 100% */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#DESCRIPTION {
+  background-color: red;
+}
+#DETAILS {
+  background-color: green;
+}
+#LOCATION {
+  background-color: blue;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196f3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
